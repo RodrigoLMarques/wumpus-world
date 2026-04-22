@@ -1,0 +1,4 @@
+"Encontre o ouro e fuja sem machucar o Wumpus."
+"Sua única missão é matar o Wumpus. Esqueça o ouro e volte vivo."
+"Vá até a casa [2,2] para investigar, e depois saia da caverna."
+"Pegue o ouro e depois morra para o Wumpus."
