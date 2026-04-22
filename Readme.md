@@ -1,8 +1,23 @@
 # Wumpus World
 
-Simulação do Mundo do Wumpus implementada em Python para a disciplina de Inteligência Artificial.
+Simulação do Mundo do Wumpus em Python para a disciplina de Inteligência Artificial.
 
-O agente navega autonomamente por uma grade 4×4 explorando células desconhecidas, detectando perigos (Wumpus e abismos) através de percepções (fedor e brisa) e buscando o ouro usando BFS.
+## Agentes
+
+**`Agent/`** — Agente determinístico com BFS e heurística de pontuação por célula.
+
+**`LLM/`** — Agente baseado em LLM (Groq) que recebe missões em linguagem natural e age via ReAct. Ferramentas: `andar`, `atirar`, `pegar_ouro`, `escalar_saida`.
+
+## Como rodar
+
+```bash
+# Agente clássico
+cd Agent && python main.py
+
+# Agente LLM
+cp .env.example .env  # preencha GROQ_API_KEY no .env
+cd LLM && python main.py
+```
 
 ## Grupo
 
